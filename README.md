@@ -22,3 +22,4 @@ Newest first.
 
 | Date | Project or topic | Area | Link |
 |---|---|---|---|
+| 2026-10-01 | Sign-in, payments and security for a learning platform | Web | [Entry](web/2026-10-01-secure-learning-platform.md) |
