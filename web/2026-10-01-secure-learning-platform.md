@@ -34,11 +34,10 @@
 
 ## Tools used
 
-- Next.js (App Router, server actions, route handlers), React, Tailwind CSS, next-intl for the translations
-- Supabase (Auth with Google and Microsoft, Postgres, row-level security), PGlite to test migrations locally
-- Stripe (Checkout, webhooks, command-line tool), Resend for email
+- Next.js, React, Tailwind CSS, next-intl for the translations
+- supabase, PGlite to test migrations locally
+- stripe, Resend for email
 - GSAP and CSS for motion, Playwright and axe for end-to-end and accessibility tests
-- Claude Code, and Claude Design for dashboard prototypes
 - Google Cloud and Microsoft Entra for the sign-in providers
 
 ## Link to the project repo
