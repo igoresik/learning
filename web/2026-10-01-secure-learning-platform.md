@@ -4,7 +4,7 @@
 
 ## What I built or changed
 
-- Worked on a Next.js learning platform (a course, a bookkeeping simulator and accounts), with Claude Code helping me write and check the code.
+- Worked on a Next.js learning platform (a course, a bookkeeping simulator and accounts).
 - Sign-in and accounts: sign-up with a name, a live password strength bar with a show/hide eye, a password rule that is also enforced on the server, "Continue with Google" and "Continue with Microsoft", and changing a password only after confirming the current one.
 - A test-mode Stripe Checkout where a paid checkout switches an account from free to paid through a signed webhook.
 - Saved projects in the simulator for paid accounts, kept in Postgres with row-level security.
