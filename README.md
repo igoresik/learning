@@ -22,4 +22,5 @@ Newest first.
 
 | Date | Project or topic | Area | Link |
 |---|---|---|---|
+| 2026-10-06 | Interactive lessons and a fair exam system for an online course | Web | [Entry](web/2026-10-06-interactive-course-and-exam-integrity.md) |
 | 2026-10-01 | Sign-in, payments and security for a learning platform | Web | [Entry](web/2026-10-01-secure-learning-platform.md) |
