@@ -39,7 +39,6 @@
 - Supabase (Postgres)
 - GSAP for the see-saw motion
 - Playwright and axe for end-to-end and accessibility tests
-- Claude Code, including a research agent for the certificate options
 
 ## Link to the project repo
 
