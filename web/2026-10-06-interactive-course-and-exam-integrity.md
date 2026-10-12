@@ -1,6 +1,6 @@
 # Built interactive lessons and a fair exam system for an online course
 
-**Date:** 2026-10-06
+**Date:** 2026-10-06 (updated 2026-10-12)
 
 ## What I built or changed
 
@@ -13,6 +13,8 @@
 - A redesign of the simulator through four clickable prototypes, then a live accounting equation above it that turns from "≠" to "=" when the books balance.
 - Smoother page changes with React view transitions.
 - Researched how to turn the course into a credible certificate (accreditation, verifiable certificates, exam rules).
+- Later: the worked examples also show the profit and loss and the balance sheet next to the see-saw, using the same parts as the simulator.
+- Later: labs became part of finishing a module, and the end of each module now leads to its lab and quiz.
 
 ## What I learned
 
@@ -24,6 +26,9 @@
 - Test events can fire before React attaches its listeners. Retrying the first action until the page reacts is more honest than adding a fixed delay.
 - Tests that share one account can race each other (two tests counting the same rows). Checking "at least" instead of "exactly", or giving each test its own account, removes the race.
 - Building several clickable prototypes was faster than arguing over screenshots, because the user could only decide once they could use them.
+- One rule can live in many places: the page, the server, the database and the lesson text. When it changes, every place has to change with it.
+- Reusing a part that already exists is better than building a second one that slowly goes out of step.
+- In a folder shared with other unfinished work, commit only your own changes, and check that what you commit still builds on its own.
 - Formal accreditation (like QQI in Ireland) is a long, expensive process. CPD accreditation and a certificate with a public verification page are the realistic first steps, and the course must never claim exemptions it doesn't have.
 
 ## Languages
@@ -39,6 +44,7 @@
 - Supabase (Postgres)
 - GSAP for the see-saw motion
 - Playwright and axe for end-to-end and accessibility tests
+- Git
 
 ## Link to the project repo
 
