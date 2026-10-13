@@ -22,6 +22,7 @@ Newest first.
 
 | Date | Project or topic | Area | Link |
 |---|---|---|---|
+| 2026-10-13 | A small data app with Python, SQLite and Streamlit | Python | [Entry](python/2026-10-13-a-small-data-app-with-streamlit-and-sqlite.md) |
 | 2026-10-13 | Art-directing a product page around typography and real screenshots | Web | [Entry](web/2026-10-13-editorial-redesign-of-a-product-page.md) |
 | 2026-10-13 | Free push notifications for an Android app | Android | [Entry](android/2026-10-13-free-push-notifications-for-an-android-app.md) |
 | 2026-10-12 | Finding out why an Android app feels slow | Android | [Entry](android/2026-10-12-finding-why-an-android-app-feels-slow.md) |
