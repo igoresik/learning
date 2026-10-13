@@ -22,6 +22,7 @@ Newest first.
 
 | Date | Project or topic | Area | Link |
 |---|---|---|---|
+| 2026-10-13 | Free push notifications for an Android app | Android | [Entry](android/2026-10-13-free-push-notifications-for-an-android-app.md) |
 | 2026-10-12 | Finding out why an Android app feels slow | Android | [Entry](android/2026-10-12-finding-why-an-android-app-feels-slow.md) |
 | 2026-10-09 | An animated product landing page that stays fast | Web | [Entry](web/2026-10-09-animated-landing-page-that-stays-fast.md) |
 | 2026-10-07 | Securing and modernising an Android + Firebase app | Android | [Entry](android/2026-10-07-securing-and-modernising-an-android-firebase-app.md) |
