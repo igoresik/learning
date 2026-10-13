@@ -15,6 +15,7 @@
 - Added an eBay connection: sign in through eBay's consent page, then a read-only tab with active listings, Best Offers and recent orders.
 - A Settings tab where each person who runs the app enters their own keys, saved only in their local database.
 - Gave the app its own look: a colour and font theme, a headline that sums up the stock in one sentence, the profit breakdown drawn as a till receipt, and a progress bar for each parcel.
+- Packaged it as one Windows exe: double-click, and the app opens in its own window instead of a browser tab. Closing the window stops it.
 
 ## What I learned
 
@@ -34,6 +35,9 @@
 - Streamlit is themed from `.streamlit/config.toml` (colours, radius, fonts loaded from a URL), with no CSS needed for the standard widgets. Custom pieces go in with `st.html` and a small stylesheet.
 - Streamlit's own CSS can win over mine; a more specific selector fixes it. Text put into custom HTML has to be escaped first.
 - Look at the result, not only the code: the screenshots showed a "-0.00", raw "None" cells and two different euro formats that the tests did not catch.
+- A Streamlit app is a web server, so a "desktop app" version still runs that server inside. PyInstaller bundles Python and the app into one exe, a small launcher starts the server, and Edge or Chrome in `--app` mode shows it as a window with no browser bars.
+- A one-file exe unpacks to a temporary folder on every start, so user data must live somewhere else (`%APPDATA%`), or it is lost.
+- By default the Streamlit server listens on the whole network. An app that shows saved keys should be bound to `127.0.0.1` so only the same computer can open it.
 - Code that calls an outside API can be tested with fake responses (`unittest.mock`), but that only proves my code handles the shape I expected, not that the real API answers that way.
 
 ## Tools used
@@ -42,11 +46,12 @@
 - Streamlit
 - SQLite (sqlite3)
 - requests, Ship24 Tracking API, eBay APIs (OAuth, Trading, Fulfillment)
+- PyInstaller
 - unittest, unittest.mock, Streamlit AppTest
 
 ## Link to the project repo
 
-- Local project, not published yet
+- https://github.com/igoresik/logisticstracker
 
 ## Screenshot (optional)
 
