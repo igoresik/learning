@@ -22,6 +22,7 @@ Newest first.
 
 | Date | Project or topic | Area | Link |
 |---|---|---|---|
+| 2026-10-09 | An animated product landing page that stays fast | Web | [Entry](web/2026-10-09-animated-landing-page-that-stays-fast.md) |
 | 2026-10-07 | Securing and modernising an Android + Firebase app | Android | [Entry](android/2026-10-07-securing-and-modernising-an-android-firebase-app.md) |
 | 2026-10-06 | Interactive lessons and a fair exam system for an online course | Web | [Entry](web/2026-10-06-interactive-course-and-exam-integrity.md) |
 | 2026-10-01 | Sign-in, payments and security for a learning platform | Web | [Entry](web/2026-10-01-secure-learning-platform.md) |
