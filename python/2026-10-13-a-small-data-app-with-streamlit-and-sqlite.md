@@ -16,6 +16,7 @@
 - A Settings tab where each person who runs the app enters their own keys, saved only in their local database.
 - Gave the app its own look: a colour and font theme, a headline that sums up the stock in one sentence, the profit breakdown drawn as a till receipt, and a progress bar for each parcel.
 - Packaged it as one Windows exe: double-click, and the app opens in its own window instead of a browser tab. Closing the window stops it.
+- Hardened it before making it public: saved keys are encrypted with the Windows account, they are never sent back to the page, the app ignores requests that arrive through another site's domain, and dependency versions are pinned and checked for known vulnerabilities.
 
 ## What I learned
 
@@ -38,6 +39,9 @@
 - A Streamlit app is a web server, so a "desktop app" version still runs that server inside. PyInstaller bundles Python and the app into one exe, a small launcher starts the server, and Edge or Chrome in `--app` mode shows it as a window with no browser bars.
 - A one-file exe unpacks to a temporary folder on every start, so user data must live somewhere else (`%APPDATA%`), or it is lost.
 - By default the Streamlit server listens on the whole network. An app that shows saved keys should be bound to `127.0.0.1` so only the same computer can open it.
+- DNS rebinding: a website can point its own domain at 127.0.0.1 and talk to a local server, so "only listens on localhost" is not enough. Checking the `Host` header the browser sent closes that gap; I proved it by connecting once as the real page (89 elements sent) and once as a fake domain (0 sent).
+- Windows DPAPI (`CryptProtectData`) encrypts a secret with the user's login, called from Python through `ctypes`, with no extra library. It protects a copied file, not against a program already running as the same user.
+- `pip-audit` lists known vulnerabilities in installed packages, and scanning git history plus the built exe is how to check nothing private ships.
 - Code that calls an outside API can be tested with fake responses (`unittest.mock`), but that only proves my code handles the shape I expected, not that the real API answers that way.
 
 ## Tools used
@@ -47,6 +51,7 @@
 - SQLite (sqlite3)
 - requests, Ship24 Tracking API, eBay APIs (OAuth, Trading, Fulfillment)
 - PyInstaller
+- Windows DPAPI (ctypes), pip-audit
 - unittest, unittest.mock, Streamlit AppTest
 
 ## Link to the project repo
