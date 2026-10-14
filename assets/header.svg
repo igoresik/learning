@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="t d">
+  <title id="t">Learning notebook</title>
+  <desc id="d">Georgy Esik's notes on what he builds and what it teaches him: Python, Android, web, networking and security.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#171a38"/>
+    </linearGradient>
+    <linearGradient id="waveA" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#ff5fa2"><animate attributeName="stop-color" values="#ff5fa2;#7c5cff;#00d4ff;#ff5fa2" dur="12s" repeatCount="indefinite"/></stop>
+      <stop offset="0.5" stop-color="#7c5cff"><animate attributeName="stop-color" values="#7c5cff;#00d4ff;#00e5a0;#7c5cff" dur="12s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#ff5fa2"><animate attributeName="stop-color" values="#ff5fa2;#7c5cff;#00d4ff;#ff5fa2" dur="12s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <linearGradient id="waveB" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
+      <stop offset="0" stop-color="#00d4ff"><animate attributeName="stop-color" values="#00d4ff;#00e5a0;#ff5fa2;#00d4ff" dur="14s" repeatCount="indefinite"/></stop>
+      <stop offset="0.5" stop-color="#ffb347"><animate attributeName="stop-color" values="#ffb347;#ff5fa2;#7c5cff;#ffb347" dur="14s" repeatCount="indefinite"/></stop>
+      <stop offset="1" stop-color="#00d4ff"><animate attributeName="stop-color" values="#00d4ff;#00e5a0;#ff5fa2;#00d4ff" dur="14s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#bfe9ff"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- notebook paper: ruled lines and a margin -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+<line x1="0" y1="36" x2="1200" y2="36"/>
+<line x1="0" y1="68" x2="1200" y2="68"/>
+<line x1="0" y1="100" x2="1200" y2="100"/>
+<line x1="0" y1="132" x2="1200" y2="132"/>
+<line x1="0" y1="164" x2="1200" y2="164"/>
+<line x1="0" y1="196" x2="1200" y2="196"/>
+<line x1="0" y1="228" x2="1200" y2="228"/>
+<line x1="0" y1="260" x2="1200" y2="260"/>
+<line x1="0" y1="292" x2="1200" y2="292"/>
+  </g>
+  <line x1="96" y1="0" x2="96" y2="300" stroke="#ff5fa2" stroke-opacity="0.35" stroke-width="2"/>
+  <g fill="#0b1020" stroke="#ffffff" stroke-opacity="0.12">
+    <circle cx="48" cy="70" r="9"/><circle cx="48" cy="150" r="9"/><circle cx="48" cy="230" r="9"/>
+  </g>
+
+  <circle cx="240" cy="80" r="110" fill="#7c5cff" opacity="0.3" filter="url(#blur)">
+    <animate attributeName="cx" values="240;440;240" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="90" r="120" fill="#00d4ff" opacity="0.24" filter="url(#blur)">
+    <animate attributeName="cx" values="1000;800;1000" dur="22s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="640" cy="40" r="90" fill="#00e5a0" opacity="0.14" filter="url(#blur)">
+    <animate attributeName="cy" values="40;90;40" dur="16s" repeatCount="indefinite"/>
+  </circle>
+
+  <g opacity="0.55">
+    <path fill="url(#waveB)" d="M0 258 Q150 222 300 258 T600 258 T900 258 T1200 258 T1500 258 T1800 258 T2100 258 T2400 258 V300 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="-600 0" to="0 0" dur="16s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g opacity="0.8">
+    <path fill="url(#waveA)" d="M0 272 Q150 244 300 272 T600 272 T900 272 T1200 272 T1500 272 T1800 272 T2100 272 T2400 272 V300 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-600 0" dur="9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="108" font-size="66" font-weight="700" fill="url(#nameFill)" letter-spacing="1">Learning notebook</text>
+    <text x="600" y="150" font-size="24" fill="#c9d1d9" letter-spacing="1">What I build, and what it teaches me</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Courier New', monospace" font-size="24" text-anchor="middle" fill="#7fdcff">
+    <text x="600" y="206" opacity="1">$ ls python/ android/ web/
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.29;0.33;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="206" opacity="0">$ ls networking/ security/ notes/
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.37;0.62;0.66;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="206" opacity="0">$ git log  # newest entry first
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.66;0.70;0.93;0.97;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>

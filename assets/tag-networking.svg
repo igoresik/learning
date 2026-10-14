@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="116" height="26" viewBox="0 0 116 26" role="img" aria-label="Networking">
+<rect x="0.75" y="0.75" width="114.5" height="24.5" rx="12.25" fill="#171a38" stroke="#00d4ff" stroke-opacity="0.6" stroke-width="1.5"/>
+<circle cx="14" cy="13" r="4" fill="#00d4ff"/>
+<text x="25" y="17.5" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#00d4ff">Networking</text>
+</svg>

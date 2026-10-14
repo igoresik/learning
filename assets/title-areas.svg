@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="84" viewBox="0 0 400 84" role="img" aria-label="Areas">
+<defs>
+<linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="640" y2="0" spreadMethod="repeat">
+<stop offset="0" stop-color="#ff5fa2"/><stop offset="0.33" stop-color="#7c5cff"/><stop offset="0.66" stop-color="#00d4ff"/><stop offset="1" stop-color="#ff5fa2"/>
+<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="640 0" dur="7s" repeatCount="indefinite"/></linearGradient>
+</defs>
+<text x="200" y="52" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="1" fill="url(#g)">Areas</text>
+<rect x="140" y="68" width="120" height="4" rx="2" fill="url(#g)"/>
+<circle cy="70" r="4" fill="#ffffff" opacity="0.9"><animate attributeName="cx" values="140;260;140" dur="3s" repeatCount="indefinite"/></circle>
+</svg>
