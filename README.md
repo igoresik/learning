@@ -1,32 +1,63 @@
-# Learning notebook
+<div align="center">
+  <img src="./assets/header.svg" alt="Learning notebook: what I build, and what it teaches me" width="100%">
+</div>
 
-Hi, I'm Georgy, a junior developer from Portugal. I'm currently an Erasmus+ intern in Cork, Ireland. I have CCNA and cybersecurity foundations, and I work with Java, Python, Android, web, and networking/security.
+<p align="center">
+  <a href="https://github.com/igoresik">
+    <img src="https://skillicons.dev/icons?i=github" height="40" alt="GitHub profile" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/georgy-esik-6a83a843b/">
+    <img src="https://skillicons.dev/icons?i=linkedin" height="40" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:georgyesik@gmail.com">
+    <img src="https://skillicons.dev/icons?i=gmail" height="40" alt="Email" />
+  </a>
+</p>
 
-This repo is my learning notebook: short notes and mini-projects that show what I've actually built and learned, as I go. It's a record of progress, not a showcase of finished products.
+<div align="center">
+  <img src="./assets/title-about.svg" alt="About" width="300">
+  <br><br>
+  <img src="./assets/about.svg" alt="notebook.py: kept by Georgy, a junior developer from Portugal and Erasmus+ intern in Cork. A record of progress, not a showcase." width="760">
+  <br><br>
+  <p>
+    Hi, I'm Georgy, a junior developer from Portugal, currently an Erasmus+ intern in Cork, Ireland.<br>
+    I have CCNA and cybersecurity foundations, and I work with Java, Python, Android, web, and networking/security.
+  </p>
+  <p>
+    This repo is my learning notebook: short notes and mini-projects that show what I've actually built and learned, as I go.<br>
+    It's a record of progress, not a showcase of finished products.
+  </p>
+</div>
 
-## Structure
+<div align="center">
+  <img src="./assets/title-areas.svg" alt="Areas" width="300">
+  <br><br>
+  <a href="python/"><img src="./assets/area-python.svg" alt="python/: Python scripts and projects" width="32%"></a>
+  <a href="android/"><img src="./assets/area-android.svg" alt="android/: Android (Java) apps and experiments" width="32%"></a>
+  <a href="web/"><img src="./assets/area-web.svg" alt="web/: HTML, CSS, JavaScript and web projects" width="32%"></a>
+  <br>
+  <a href="networking/"><img src="./assets/area-networking.svg" alt="networking/: networking labs and notes (CCNA topics)" width="32%"></a>
+  <a href="security/"><img src="./assets/area-security.svg" alt="security/: cybersecurity notes and exercises" width="32%"></a>
+  <a href="notes/"><img src="./assets/area-notes.svg" alt="notes/: general notes that don't fit elsewhere" width="32%"></a>
+  <br><br>
+  <p>Every entry follows the same template in <a href="templates/entry.md"><code>templates/entry.md</code></a>: what I built, what I learned, and the tools I used.</p>
+</div>
 
-| Folder | What goes there |
-|---|---|
-| `python/` | Python scripts and projects |
-| `android/` | Android (Java) apps and experiments |
-| `web/` | HTML, CSS, JavaScript and web projects |
-| `networking/` | Networking labs and notes (CCNA topics) |
-| `security/` | Cybersecurity notes and exercises |
-| `notes/` | General notes that don't fit elsewhere |
-| `templates/` | Template for new entries |
+<div align="center">
+  <img src="./assets/title-index.svg" alt="Index" width="300">
+  <p>Newest first.</p>
+</div>
 
-## Index
-
-Newest first.
-
-| Date | Project or topic | Area | Link |
-|---|---|---|---|
-| 2026-10-13 | A small data app with Python, SQLite and Streamlit | Python | [Entry](python/2026-10-13-a-small-data-app-with-streamlit-and-sqlite.md) |
-| 2026-10-13 | Art-directing a product page around typography and real screenshots | Web | [Entry](web/2026-10-13-editorial-redesign-of-a-product-page.md) |
-| 2026-10-13 | Free push notifications for an Android app | Android | [Entry](android/2026-10-13-free-push-notifications-for-an-android-app.md) |
-| 2026-10-12 | Finding out why an Android app feels slow | Android | [Entry](android/2026-10-12-finding-why-an-android-app-feels-slow.md) |
-| 2026-10-09 | An animated product landing page that stays fast | Web | [Entry](web/2026-10-09-animated-landing-page-that-stays-fast.md) |
-| 2026-10-07 | Securing and modernising an Android + Firebase app | Android | [Entry](android/2026-10-07-securing-and-modernising-an-android-firebase-app.md) |
-| 2026-10-06 | Interactive lessons and a fair exam system for an online course | Web | [Entry](web/2026-10-06-interactive-course-and-exam-integrity.md) |
-| 2026-10-01 | Sign-in, payments and security for a learning platform | Web | [Entry](web/2026-10-01-secure-learning-platform.md) |
+<table align="center">
+  <tr><th>Date</th><th>Entry</th><th>Area</th></tr>
+  <tr><td>2026-10-13</td><td><a href="python/2026-10-13-a-small-data-app-with-streamlit-and-sqlite.md">A small data app with Python, SQLite and Streamlit</a></td><td><img src="./assets/tag-python.svg" alt="Python" height="24"></td></tr>
+  <tr><td>2026-10-13</td><td><a href="web/2026-10-13-editorial-redesign-of-a-product-page.md">Art-directing a product page around typography and real screenshots</a></td><td><img src="./assets/tag-web.svg" alt="Web" height="24"></td></tr>
+  <tr><td>2026-10-13</td><td><a href="android/2026-10-13-free-push-notifications-for-an-android-app.md">Free push notifications for an Android app</a></td><td><img src="./assets/tag-android.svg" alt="Android" height="24"></td></tr>
+  <tr><td>2026-10-12</td><td><a href="android/2026-10-12-finding-why-an-android-app-feels-slow.md">Finding out why an Android app feels slow</a></td><td><img src="./assets/tag-android.svg" alt="Android" height="24"></td></tr>
+  <tr><td>2026-10-09</td><td><a href="web/2026-10-09-animated-landing-page-that-stays-fast.md">An animated product landing page that stays fast</a></td><td><img src="./assets/tag-web.svg" alt="Web" height="24"></td></tr>
+  <tr><td>2026-10-07</td><td><a href="android/2026-10-07-securing-and-modernising-an-android-firebase-app.md">Securing and modernising an Android + Firebase app</a></td><td><img src="./assets/tag-android.svg" alt="Android" height="24"></td></tr>
+  <tr><td>2026-10-06</td><td><a href="web/2026-10-06-interactive-course-and-exam-integrity.md">Interactive lessons and a fair exam system for an online course</a></td><td><img src="./assets/tag-web.svg" alt="Web" height="24"></td></tr>
+  <tr><td>2026-10-01</td><td><a href="web/2026-10-01-secure-learning-platform.md">Sign-in, payments and security for a learning platform</a></td><td><img src="./assets/tag-web.svg" alt="Web" height="24"></td></tr>
+</table>
