@@ -16,6 +16,8 @@
 - A Settings tab where each person who runs the app enters their own keys, saved only in their local database.
 - Gave the app its own look: a colour and font theme, a headline that sums up the stock in one sentence, the profit breakdown drawn as a till receipt, and a progress bar for each parcel.
 - Packaged it as one Windows exe: double-click, and the app opens in its own window instead of a browser tab. Closing the window stops it.
+- Moved all money from decimal numbers to whole cents, with fee rates in basis points, and wrote a migration that converts existing databases in one all-or-nothing step and keeps a copy of the old file.
+- Tracking history is now saved: every Ship24 event goes into its own table, so a parcel's timeline survives a restart.
 - Hardened it before making it public: saved keys are encrypted with the Windows account, they are never sent back to the page, the app ignores requests that arrive through another site's domain, and dependency versions are pinned and checked for known vulnerabilities.
 
 ## What I learned
@@ -42,6 +44,10 @@
 - DNS rebinding: a website can point its own domain at 127.0.0.1 and talk to a local server, so "only listens on localhost" is not enough. Checking the `Host` header the browser sent closes that gap; I proved it by connecting once as the real page (89 elements sent) and once as a fake domain (0 sent).
 - Windows DPAPI (`CryptProtectData`) encrypts a secret with the user's login, called from Python through `ctypes`, with no extra library. It protects a copied file, not against a program already running as the same user.
 - `pip-audit` lists known vulnerabilities in installed packages, and scanning git history plus the built exe is how to check nothing private ships.
+- Money should not be stored as a float. 0.1 has no exact binary form, so a running total of floats drifts; whole cents in an `INTEGER` column add up exactly, and `Decimal` with `ROUND_HALF_UP` handles the one place a fee needs rounding.
+- SQLite cannot change a column's type, so a schema change means renaming the old tables, creating new ones, copying the data across and dropping the old ones, all inside one transaction. Counting rows and running `PRAGMA foreign_key_check` before `COMMIT` makes it all or nothing, and `PRAGMA user_version` records which schema a file has.
+- Saving each event with its own id and a `UNIQUE` constraint plus `INSERT OR IGNORE` makes re-checking safe: only new events are added.
+- Python's built-in `sum()` hides float drift for short lists because it compensates internally; a plain running total shows it.
 - Code that calls an outside API can be tested with fake responses (`unittest.mock`), but that only proves my code handles the shape I expected, not that the real API answers that way.
 
 ## Tools used
