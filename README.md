@@ -52,6 +52,7 @@
 
 <table align="center">
   <tr><th>Date</th><th>Entry</th><th>Area</th></tr>
+  <tr><td>2026-10-16</td><td><a href="security/2026-10-16-triaging-security-risks-across-projects.md">Triaging security risks against how each project is built</a></td><td><img src="./assets/tag-security.svg" alt="Security" height="24"></td></tr>
   <tr><td>2026-10-15</td><td><a href="security/2026-10-15-securing-an-app-backend-before-release.md">Securing an app's backend before release</a></td><td><img src="./assets/tag-security.svg" alt="Security" height="24"></td></tr>
   <tr><td>2026-10-15</td><td><a href="android/2026-10-15-online-payments-with-stripe-connect.md">Online payments in an Android app with Stripe Connect</a></td><td><img src="./assets/tag-android.svg" alt="Android" height="24"></td></tr>
   <tr><td>2026-10-13</td><td><a href="python/2026-10-13-a-small-data-app-with-streamlit-and-sqlite.md">A small data app with Python, SQLite and Streamlit</a></td><td><img src="./assets/tag-python.svg" alt="Python" height="24"></td></tr>
