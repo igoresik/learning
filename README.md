@@ -52,6 +52,7 @@
 
 <table align="center">
   <tr><th>Date</th><th>Entry</th><th>Area</th></tr>
+  <tr><td>2026-10-19</td><td><a href="android/2026-10-19-screen-readers-and-two-languages-in-an-android-app.md">Making an Android app work with a screen reader and in two languages</a></td><td><img src="./assets/tag-android.svg" alt="Android" height="24"></td></tr>
   <tr><td>2026-10-19</td><td><a href="android/2026-10-19-dark-theme-for-an-existing-android-app.md">Adding a dark theme to an existing Android app</a></td><td><img src="./assets/tag-android.svg" alt="Android" height="24"></td></tr>
   <tr><td>2026-10-16</td><td><a href="security/2026-10-16-triaging-security-risks-across-projects.md">Triaging security risks against how each project is built</a></td><td><img src="./assets/tag-security.svg" alt="Security" height="24"></td></tr>
   <tr><td>2026-10-15</td><td><a href="security/2026-10-15-securing-an-app-backend-before-release.md">Securing an app's backend before release</a></td><td><img src="./assets/tag-security.svg" alt="Security" height="24"></td></tr>
