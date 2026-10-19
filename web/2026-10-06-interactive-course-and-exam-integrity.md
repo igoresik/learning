@@ -1,6 +1,6 @@
 # Built interactive lessons and a fair exam system for an online course
 
-**Date:** 2026-10-06 (updated 2026-10-12)
+**Date:** 2026-10-06 (updated 2026-10-12 and 2026-10-16)
 
 ## What I built or changed
 
@@ -15,6 +15,7 @@
 - Researched how to turn the course into a credible certificate (accreditation, verifiable certificates, exam rules).
 - Later: the worked examples also show the profit and loss and the balance sheet next to the see-saw, using the same parts as the simulator.
 - Later: labs became part of finishing a module, and the end of each module now leads to its lab and quiz.
+- Later: audited the whole platform before a progress review: every page on desktop and phone, plus an automated accessibility scan. The worst find was progress that disagreed between pages, so I made the dashboard and the Resume button follow the same rule as the course page and added a test for it.
 
 ## What I learned
 
@@ -27,6 +28,9 @@
 - Tests that share one account can race each other (two tests counting the same rows). Checking "at least" instead of "exactly", or giving each test its own account, removes the race.
 - Building several clickable prototypes was faster than arguing over screenshots, because the user could only decide once they could use them.
 - One rule can live in many places: the page, the server, the database and the lesson text. When it changes, every place has to change with it.
+- Comparing what different pages say about the same thing is a fast way to find that kind of bug. The dashboard counted only the lessons, while the course page and the final exam page also counted the lab and the quiz.
+- An accessibility scanner catches what looks fine to the eye: white text on the bright brand-orange buttons only reaches about 3.5:1 contrast, and normal-size text needs 4.5:1.
+- Next.js skips the jump to a `#section` link when the page shows a loading skeleton first, because the section doesn't exist yet. A tiny client component that scrolls to it once the content arrives fixes it.
 - Reusing a part that already exists is better than building a second one that slowly goes out of step.
 - In a folder shared with other unfinished work, commit only your own changes, and check that what you commit still builds on its own.
 - Formal accreditation (like QQI in Ireland) is a long, expensive process. CPD accreditation and a certificate with a public verification page are the realistic first steps, and the course must never claim exemptions it doesn't have.
