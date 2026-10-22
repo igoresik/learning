@@ -1,6 +1,8 @@
+<sub><a href="../README.md">Back to the notebook</a></sub>
+
 # A small data app with Python, SQLite and Streamlit (Logistics Tracker)
 
-**Date:** 2026-10-13
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-python-dark.svg"><img src="../assets/tag-python.svg" alt="Python" height="22"></picture></a>&nbsp; **Date:** 2026-10-13
 
 ## What I built or changed
 

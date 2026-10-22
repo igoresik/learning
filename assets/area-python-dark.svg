@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="132" viewBox="0 0 380 132" role="img" aria-label="python/: Scripts and small apps">
+<clipPath id="c"><path d="M1 45 V11 Q1 1 11 1 H167 Q177 1 177 11 V45 Z"/></clipPath>
+<path d="M1 45 V11 Q1 1 11 1 H167 Q177 1 177 11 V45 Z" fill="#363328" stroke="#725f30" stroke-width="1.5"/>
+<rect x="1" y="1" width="176" height="4" fill="#e3b341" clip-path="url(#c)"/>
+<text x="20" y="27" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#e3b341">python/</text>
+<rect x="1" y="34" width="378" height="97" rx="14" fill="#151b23" stroke="#3d444d" stroke-width="1.5"/>
+<rect x="20" y="56" width="52" height="52" rx="12" fill="#363328"/>
+<g transform="translate(20 56) scale(0.7222) translate(-24 -24)"><text x="60" y="69" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="24" font-weight="700" fill="#e3b341">&gt;&gt;&gt;</text></g>
+<text x="90" y="89" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="19" fill="#f0f6fc">Scripts and small apps</text>
+</svg>

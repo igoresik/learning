@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="75" height="26" viewBox="0 0 75 26" role="img" aria-label="Notes">
-<rect x="0.75" y="0.75" width="73.5" height="24.5" rx="12.25" fill="#171a38" stroke="#c9d1d9" stroke-opacity="0.6" stroke-width="1.5"/>
-<circle cx="14" cy="13" r="4" fill="#c9d1d9"/>
-<text x="25" y="17.5" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#c9d1d9">Notes</text>
+<rect x="0.75" y="0.75" width="73.5" height="24.5" rx="12.25" fill="#eeeff0" stroke="#59636e" stroke-opacity="0.45" stroke-width="1.5"/>
+<circle cx="14" cy="13" r="4" fill="#59636e"/>
+<text x="25" y="17.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#59636e">Notes</text>
 </svg>

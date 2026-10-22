@@ -1,6 +1,9 @@
+<sub><a href="../README.md">Back to the notebook</a></sub>
+
 # Title
 
-**Date:** YYYY-MM-DD
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-AREA-dark.svg"><img src="../assets/tag-AREA.svg" alt="Area" height="22"></picture></a>&nbsp; **Date:** YYYY-MM-DD
+<!-- AREA is the entry's folder: python, android, web, networking, security or notes. -->
 
 ## What I built or changed
 

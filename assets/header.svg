@@ -1,82 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="t d">
-  <title id="t">Learning notebook</title>
-  <desc id="d">Georgy Esik's notes on what he builds and what it teaches him: Python, Android, web, networking and security.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1020"/>
-      <stop offset="1" stop-color="#171a38"/>
-    </linearGradient>
-    <linearGradient id="waveA" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
-      <stop offset="0" stop-color="#ff5fa2"><animate attributeName="stop-color" values="#ff5fa2;#7c5cff;#00d4ff;#ff5fa2" dur="12s" repeatCount="indefinite"/></stop>
-      <stop offset="0.5" stop-color="#7c5cff"><animate attributeName="stop-color" values="#7c5cff;#00d4ff;#00e5a0;#7c5cff" dur="12s" repeatCount="indefinite"/></stop>
-      <stop offset="1" stop-color="#ff5fa2"><animate attributeName="stop-color" values="#ff5fa2;#7c5cff;#00d4ff;#ff5fa2" dur="12s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-    <linearGradient id="waveB" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="repeat">
-      <stop offset="0" stop-color="#00d4ff"><animate attributeName="stop-color" values="#00d4ff;#00e5a0;#ff5fa2;#00d4ff" dur="14s" repeatCount="indefinite"/></stop>
-      <stop offset="0.5" stop-color="#ffb347"><animate attributeName="stop-color" values="#ffb347;#ff5fa2;#7c5cff;#ffb347" dur="14s" repeatCount="indefinite"/></stop>
-      <stop offset="1" stop-color="#00d4ff"><animate attributeName="stop-color" values="#00d4ff;#00e5a0;#ff5fa2;#00d4ff" dur="14s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#bfe9ff"/>
-    </linearGradient>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
-  </defs>
-
-  <rect width="1200" height="300" fill="url(#bg)"/>
-
-  <!-- notebook paper: ruled lines and a margin -->
-  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
-<line x1="0" y1="36" x2="1200" y2="36"/>
-<line x1="0" y1="68" x2="1200" y2="68"/>
-<line x1="0" y1="100" x2="1200" y2="100"/>
-<line x1="0" y1="132" x2="1200" y2="132"/>
-<line x1="0" y1="164" x2="1200" y2="164"/>
-<line x1="0" y1="196" x2="1200" y2="196"/>
-<line x1="0" y1="228" x2="1200" y2="228"/>
-<line x1="0" y1="260" x2="1200" y2="260"/>
-<line x1="0" y1="292" x2="1200" y2="292"/>
-  </g>
-  <line x1="96" y1="0" x2="96" y2="300" stroke="#ff5fa2" stroke-opacity="0.35" stroke-width="2"/>
-  <g fill="#0b1020" stroke="#ffffff" stroke-opacity="0.12">
-    <circle cx="48" cy="70" r="9"/><circle cx="48" cy="150" r="9"/><circle cx="48" cy="230" r="9"/>
-  </g>
-
-  <circle cx="240" cy="80" r="110" fill="#7c5cff" opacity="0.3" filter="url(#blur)">
-    <animate attributeName="cx" values="240;440;240" dur="18s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1000" cy="90" r="120" fill="#00d4ff" opacity="0.24" filter="url(#blur)">
-    <animate attributeName="cx" values="1000;800;1000" dur="22s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="640" cy="40" r="90" fill="#00e5a0" opacity="0.14" filter="url(#blur)">
-    <animate attributeName="cy" values="40;90;40" dur="16s" repeatCount="indefinite"/>
-  </circle>
-
-  <g opacity="0.55">
-    <path fill="url(#waveB)" d="M0 258 Q150 222 300 258 T600 258 T900 258 T1200 258 T1500 258 T1800 258 T2100 258 T2400 258 V300 H0 Z">
-      <animateTransform attributeName="transform" type="translate" from="-600 0" to="0 0" dur="16s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <g opacity="0.8">
-    <path fill="url(#waveA)" d="M0 272 Q150 244 300 272 T600 272 T900 272 T1200 272 T1500 272 T1800 272 T2100 272 T2400 272 V300 H0 Z">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="-600 0" dur="9s" repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <g font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" text-anchor="middle">
-    <text x="600" y="108" font-size="66" font-weight="700" fill="url(#nameFill)" letter-spacing="1">Learning notebook</text>
-    <text x="600" y="150" font-size="24" fill="#c9d1d9" letter-spacing="1">What I build, and what it teaches me</text>
-  </g>
-
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Courier New', monospace" font-size="24" text-anchor="middle" fill="#7fdcff">
-    <text x="600" y="206" opacity="1">$ ls python/ android/ web/
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.29;0.33;1" dur="12s" repeatCount="indefinite"/>
-    </text>
-    <text x="600" y="206" opacity="0">$ ls networking/ security/ notes/
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.37;0.62;0.66;1" dur="12s" repeatCount="indefinite"/>
-    </text>
-    <text x="600" y="206" opacity="0">$ git log  # newest entry first
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.66;0.70;0.93;0.97;1" dur="12s" repeatCount="indefinite"/>
-    </text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="292" viewBox="0 0 1200 292" role="img" aria-labelledby="t d">
+<title id="t">Learning notebook</title>
+<desc id="d">What I build, and what it teaches me. A notebook page with divider tabs for python, android, web, networking, security and notes.</desc>
+<!-- Title set in Bricolage Grotesque, Copyright 2022 The Bricolage Grotesque Project Authors (https://github.com/ateliertriay/bricolage), SIL Open Font License 1.1 (https://openfontlicense.org). Subset embedded below. -->
+<style>
+@font-face { font-family: "Bricolage Grotesque"; src: url(data:font/woff2;base64,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) format("woff2"); }
+.tab { animation: rise .7s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes rise { from { transform: translateY(44px); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .tab { animation: none; } }
+</style>
+<g class="tab" style="animation-delay:0.15s"><clipPath id="c0"><path d="M226 52 V10 Q226 0 236 0 H366 Q376 0 376 10 V52 Z"/></clipPath><path d="M226 52 V10 Q226 0 236 0 H366 Q376 0 376 10 V52 Z" fill="#f5f0e6" stroke="#d2bb8c"/><rect x="226" y="0" width="150" height="4" fill="#9a6700" clip-path="url(#c0)"/><text x="301.0" y="29" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="600" fill="#9a6700">python/</text></g><g class="tab" style="animation-delay:0.23s"><clipPath id="c1"><path d="M386 52 V10 Q386 0 396 0 H526 Q536 0 536 10 V52 Z"/></clipPath><path d="M386 52 V10 Q386 0 396 0 H526 Q536 0 536 10 V52 Z" fill="#e8f2eb" stroke="#98c5a5"/><rect x="386" y="0" width="150" height="4" fill="#1a7f37" clip-path="url(#c1)"/><text x="461.0" y="29" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="600" fill="#1a7f37">android/</text></g><g class="tab" style="animation-delay:0.31s"><clipPath id="c2"><path d="M546 52 V10 Q546 0 556 0 H686 Q696 0 696 10 V52 Z"/></clipPath><path d="M546 52 V10 Q546 0 556 0 H686 Q696 0 696 10 V52 Z" fill="#f9ebf3" stroke="#e2a6ca"/><rect x="546" y="0" width="150" height="4" fill="#bf3989" clip-path="url(#c2)"/><text x="621.0" y="29" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="600" fill="#bf3989">web/</text></g><g class="tab" style="animation-delay:0.39s"><clipPath id="c3"><path d="M706 52 V10 Q706 0 716 0 H846 Q856 0 856 10 V52 Z"/></clipPath><path d="M706 52 V10 Q706 0 716 0 H846 Q856 0 856 10 V52 Z" fill="#e8f2f3" stroke="#98c4c7"/><rect x="706" y="0" width="150" height="4" fill="#1b7c83" clip-path="url(#c3)"/><text x="781.0" y="29" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="600" fill="#1b7c83">networking/</text></g><g class="tab" style="animation-delay:0.47s"><clipPath id="c4"><path d="M866 52 V10 Q866 0 876 0 H1006 Q1016 0 1016 10 V52 Z"/></clipPath><path d="M866 52 V10 Q866 0 876 0 H1006 Q1016 0 1016 10 V52 Z" fill="#f2eefc" stroke="#c7b0f1"/><rect x="866" y="0" width="150" height="4" fill="#8250df" clip-path="url(#c4)"/><text x="941.0" y="29" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="600" fill="#8250df">security/</text></g><g class="tab" style="animation-delay:0.55s"><clipPath id="c5"><path d="M1026 52 V10 Q1026 0 1036 0 H1166 Q1176 0 1176 10 V52 Z"/></clipPath><path d="M1026 52 V10 Q1026 0 1036 0 H1166 Q1176 0 1176 10 V52 Z" fill="#eeeff0" stroke="#b4b9be"/><rect x="1026" y="0" width="150" height="4" fill="#59636e" clip-path="url(#c5)"/><text x="1101.0" y="29" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="600" fill="#59636e">notes/</text></g>
+<rect x="1" y="40" width="1198" height="250" rx="16" fill="#ffffff" stroke="#d1d9e0" stroke-width="1.5"/>
+<g stroke="#eaeef2" stroke-width="1.5"><line x1="2" y1="92" x2="1198" y2="92"/><line x1="2" y1="144" x2="1198" y2="144"/><line x1="2" y1="196" x2="1198" y2="196"/><line x1="2" y1="248" x2="1198" y2="248"/></g>
+<line x1="112" y1="41" x2="112" y2="289" stroke="#cf222e" stroke-opacity="0.35" stroke-width="2"/>
+<g fill="#ffffff" stroke="#d1d9e0" stroke-width="1.5"><circle cx="56" cy="100" r="11"/><circle cx="56" cy="166" r="11"/><circle cx="56" cy="232" r="11"/></g>
+<text x="150" y="144" font-family="'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="88" font-weight="700" letter-spacing="0.5" fill="#1f2328">Learning notebook</text>
+<text x="154" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="28" fill="#59636e">What I build, and what it teaches me</text>
 </svg>

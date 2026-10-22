@@ -1,6 +1,8 @@
+<sub><a href="../README.md">Back to the notebook</a></sub>
+
 # Protecting sign-up and sign-in from bots with a captcha
 
-**Date:** 2026-10-19
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-security-dark.svg"><img src="../assets/tag-security.svg" alt="Security" height="22"></picture></a>&nbsp; **Date:** 2026-10-19
 
 ## What I built or changed
 
