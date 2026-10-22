@@ -1,6 +1,8 @@
+<sub><a href="../README.md">Back to the notebook</a></sub>
+
 # A paper trading desktop app with an honestly tested machine-learning signal
 
-**Date:** 2026-10-20 (versions 1.0.0, 1.1.0 and 1.2.0 released 2026-10-21, 1.3.0 and 1.4.0 on 2026-10-22)
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-python-dark.svg"><img src="../assets/tag-python.svg" alt="Python" height="22"></picture></a>&nbsp; **Date:** 2026-10-20 (versions 1.0.0, 1.1.0 and 1.2.0 released 2026-10-21, 1.3.0 and 1.4.0 on 2026-10-22)
 
 ## What I built or changed
 

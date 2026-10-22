@@ -1,6 +1,8 @@
+<sub><a href="../README.md">Back to the notebook</a></sub>
+
 # Triaging security risks against how each project is built
 
-**Date:** 2026-10-16
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-security-dark.svg"><img src="../assets/tag-security.svg" alt="Security" height="22"></picture></a>&nbsp; **Date:** 2026-10-16
 
 ## What I built or changed
 

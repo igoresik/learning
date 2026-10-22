@@ -1,6 +1,8 @@
+<sub><a href="../README.md">Back to the notebook</a></sub>
+
 # Art-directed a product page around typography and real screenshots
 
-**Date:** 2026-10-13
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-web-dark.svg"><img src="../assets/tag-web.svg" alt="Web" height="22"></picture></a>&nbsp; **Date:** 2026-10-13
 
 ## What I built or changed
 

@@ -1,6 +1,8 @@
+<sub><a href="../README.md">Back to the notebook</a></sub>
+
 # Making an Android app work with a screen reader and in two languages (NotaLivre)
 
-**Date:** 2026-10-19
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-android-dark.svg"><img src="../assets/tag-android.svg" alt="Android" height="22"></picture></a>&nbsp; **Date:** 2026-10-19
 
 ## What I built or changed
 
