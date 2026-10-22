@@ -57,6 +57,3 @@
 
 - https://github.com/igoresik/paper-trader
 
-## Screenshot (optional)
-
-<!-- ![Description](screenshot.png) -->
