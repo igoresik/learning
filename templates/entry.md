@@ -18,6 +18,4 @@
 
 -
 
-## Screenshot (optional)
-
-<!-- ![Description](screenshot.png) -->
+<!-- Only with a real screenshot: add a "## Screenshot" section with ![Description](screenshot.png). Otherwise delete this line. -->
