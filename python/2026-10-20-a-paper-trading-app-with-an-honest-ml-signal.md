@@ -1,6 +1,6 @@
 # A paper trading desktop app with an honestly tested machine-learning signal
 
-**Date:** 2026-10-20 (versions 1.0.0, 1.1.0 and 1.2.0 released 2026-10-21, 1.3.0 on 2026-10-22)
+**Date:** 2026-10-20 (versions 1.0.0, 1.1.0 and 1.2.0 released 2026-10-21, 1.3.0 and 1.4.0 on 2026-10-22)
 
 ## What I built or changed
 
@@ -14,6 +14,7 @@
 - Version 1.1: a signal that admits when it has no edge, a separate reading for how big the next move will be, a report card that scores the trader the way the model is scored, a history replay mode for practising on past days, and what a public release needs (a license, a changelog, an update check, a clear message when the data source is down).
 - Version 1.2: suggestions from an outside review of the model, each tested on decades of real data before it went in: inputs measured in units of volatility, dropping inputs that don't help, sizing positions by the model's confidence, and a multi-day "which barrier first" target.
 - Version 1.3, after the repo went public: short selling with margin and an automatic buy-in, component tests for the React interface, dependency and secret scanning on GitHub, a copy of the database before each upgrade, and a fix for a test that failed now and then.
+- Version 1.4: a Model lab backtest that holds less money before the days the model expects big moves, tested on several funds with its rule fixed in advance.
 
 ## What I learned
 
@@ -42,6 +43,8 @@
 - Testing a React interface with React Testing Library and jsdom, finding elements the way a screen reader does. Deliberately breaking the code shows whether tests are worth anything: my first ticket tests passed with the rounding broken, because round prices never round. Prices like $100.03 made every rounding show.
 - Dependency alerts earn their keep: the first Dependabot scan of the now-public repo found a long list of known holes in one package. Checking how the package is used mattered as much as the fix: it was a dev-only icon tool that never shipped in the installer.
 - A test that fails "sometimes" has a cause: this one called a real web service, but only during market hours. Forcing those conditions (market open, a slow reply) made it fail every time, which proved the fix.
+- Tuning settings on one dataset mostly picks luck. Fixing the settings first and running them unchanged on funds the model was never tuned on separated the two: its skill at calling big moves held on every fund, while its up-or-down calls only worked where they had been chosen.
+- Stepping back before predicted big moves isn't free: it lost to holding a steady amount on all four funds, because big moves go both ways and the days rated likeliest to move big were also the days the market rose most on average. Flipping the rule after seeing that would just fit it to this result.
 
 ## Tools used
 
