@@ -1,6 +1,6 @@
 # A paper trading desktop app with an honestly tested machine-learning signal
 
-**Date:** 2026-10-20 (versions 1.0.0, 1.1.0 and 1.2.0 released 2026-10-21)
+**Date:** 2026-10-20 (versions 1.0.0, 1.1.0 and 1.2.0 released 2026-10-21, 1.3.0 on 2026-10-22)
 
 ## What I built or changed
 
@@ -13,6 +13,7 @@
 - A review pass before 1.0.0: code and security reviews of the whole app, each fix in its own pull request with a test, and stock-split handling across the ledger, the charts' history and the model's record.
 - Version 1.1: a signal that admits when it has no edge, a separate reading for how big the next move will be, a report card that scores the trader the way the model is scored, a history replay mode for practising on past days, and what a public release needs (a license, a changelog, an update check, a clear message when the data source is down).
 - Version 1.2: suggestions from an outside review of the model, each tested on decades of real data before it went in: inputs measured in units of volatility, dropping inputs that don't help, sizing positions by the model's confidence, and a multi-day "which barrier first" target.
+- Version 1.3, after the repo went public: short selling with margin and an automatic buy-in, component tests for the React interface, dependency and secret scanning on GitHub, a copy of the database before each upgrade, and a fix for a test that failed now and then.
 
 ## What I learned
 
@@ -36,17 +37,22 @@
 - Building a trading UI in React: server state in TanStack Query refreshed by live events, a small store for streaming quotes, and charts with TradingView Lightweight Charts. Colours are checked with a palette validator so up and down still read for colour-blind users.
 - Shipping a Python desktop app: a pywebview window, opening the window before the heavy imports so the first start doesn't look frozen, a per-user Inno Setup installer that keeps the user's data on uninstall, and a Docker image for running it without the window.
 - CI catches what local runs hide: the bare `pytest` command doesn't put the project on the import path, while `python -m pytest` does.
+- How short selling and margin work, and how to fit them into a ledger: the sale's money is held as collateral with half as much again (the US 150% rule), and when the price rises until the collateral is only 130% of the cost of buying back, the position is bought back automatically. A short is a position below zero shares with a negative cost basis, and treating the buy-in as a buy stop let the existing live, catch-up and replay matching handle it with no new code paths.
+- Risky actions should need clear intent: selling short takes its own flag, so a double-click or an out-of-date screen can't open a short by accident, and one order never flips a position from long to short.
+- Testing a React interface with React Testing Library and jsdom, finding elements the way a screen reader does. Deliberately breaking the code shows whether tests are worth anything: my first ticket tests passed with the rounding broken, because round prices never round. Prices like $100.03 made every rounding show.
+- Dependency alerts earn their keep: the first Dependabot scan of the now-public repo found a long list of known holes in one package. Checking how the package is used mattered as much as the fix: it was a dev-only icon tool that never shipped in the installer.
+- A test that fails "sometimes" has a cause: this one called a real web service, but only during market hours. Forcing those conditions (market open, a slow reply) made it fail every time, which proved the fix.
 
 ## Tools used
 
 - Python 3.14, FastAPI, uvicorn, SQLite (sqlite3), pandas, NumPy, scikit-learn, yfinance, websockets
 - React 19, TypeScript, Vite, Tailwind CSS, Radix UI, TanStack Query, TradingView Lightweight Charts, Sonner
-- pytest, Vitest
-- pywebview (WebView2), PyInstaller, Inno Setup, Docker, GitHub Actions
+- pytest, Vitest, React Testing Library, jsdom
+- pywebview (WebView2), PyInstaller, Inno Setup, Docker, GitHub Actions, Dependabot, GitHub secret scanning
 
 ## Link to the project repo
 
-- Private for now.
+- https://github.com/igoresik/paper-trader
 
 ## Screenshot (optional)
 
