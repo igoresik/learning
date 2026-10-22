@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="132" viewBox="0 0 380 132" role="img" aria-label="security/: Cyber notes and exercises">
+<clipPath id="c"><path d="M1 45 V11 Q1 1 11 1 H167 Q177 1 177 11 V45 Z"/></clipPath>
+<path d="M1 45 V11 Q1 1 11 1 H167 Q177 1 177 11 V45 Z" fill="#2c2945" stroke="#554282" stroke-width="1.5"/>
+<rect x="1" y="1" width="176" height="4" fill="#a371f7" clip-path="url(#c)"/>
+<text x="20" y="27" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="600" fill="#a371f7">security/</text>
+<rect x="1" y="34" width="378" height="97" rx="14" fill="#151b23" stroke="#3d444d" stroke-width="1.5"/>
+<rect x="20" y="56" width="52" height="52" rx="12" fill="#2c2945"/>
+<g transform="translate(20 56) scale(0.7222) translate(-24 -24)"><path d="M60 36 L80 44 V59 C80 71 72 80 60 85 C48 80 40 71 40 59 V44 Z" fill="none" stroke="#a371f7" stroke-width="3" stroke-linejoin="round"/><circle cx="60" cy="57" r="5" fill="#a371f7"/><rect x="58" y="59" width="4" height="12" rx="2" fill="#a371f7"/></g>
+<text x="90" y="89" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="19" fill="#f0f6fc">Cyber notes and exercises</text>
+</svg>

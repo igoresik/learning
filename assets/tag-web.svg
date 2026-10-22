@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="59" height="26" viewBox="0 0 59 26" role="img" aria-label="Web">
-<rect x="0.75" y="0.75" width="57.1" height="24.5" rx="12.25" fill="#171a38" stroke="#ff5fa2" stroke-opacity="0.6" stroke-width="1.5"/>
-<circle cx="14" cy="13" r="4" fill="#ff5fa2"/>
-<text x="25" y="17.5" font-family="'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#ff5fa2">Web</text>
+<rect x="0.75" y="0.75" width="57.5" height="24.5" rx="12.25" fill="#f9ebf3" stroke="#bf3989" stroke-opacity="0.45" stroke-width="1.5"/>
+<circle cx="14" cy="13" r="4" fill="#bf3989"/>
+<text x="25" y="17.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#bf3989">Web</text>
 </svg>
