@@ -28,7 +28,3 @@
 ## Link to the project repo
 
 - Private repositories (NotaLivre and the learning platform)
-
-## Screenshot (optional)
-
-<!-- ![Description](screenshot.png) -->

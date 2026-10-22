@@ -32,7 +32,3 @@
 ## Link to the project repo
 
 - Private repository (NotaLivre)
-
-## Screenshot (optional)
-
-<!-- ![Description](screenshot.png) -->

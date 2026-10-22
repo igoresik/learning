@@ -56,4 +56,3 @@
 ## Link to the project repo
 
 - https://github.com/igoresik/paper-trader
-

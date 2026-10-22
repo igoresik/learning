@@ -37,7 +37,3 @@
 ## Link to the project repo
 
 - Private repository (NotaLivre). Live site (still the previous version): https://nota-livre.vercel.app
-
-## Screenshot (optional)
-
-<!-- ![Description](screenshot.png) -->

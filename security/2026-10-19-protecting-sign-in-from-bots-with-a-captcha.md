@@ -31,7 +31,3 @@
 ## Link to the project repo
 
 - Private repository (client project)
-
-## Screenshot (optional)
-
-<!-- ![Description](screenshot.png) -->
