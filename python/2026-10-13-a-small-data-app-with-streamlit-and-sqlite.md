@@ -62,7 +62,7 @@
 
 ## Link to the project repo
 
-- https://github.com/igoresik/logisticstracker
+- https://github.com/igoresik/reseller-tracker
 
 ## Screenshot (optional)
 
