@@ -2,7 +2,7 @@
 
 # Built interactive lessons and a fair exam system for an online course
 
-<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-web-dark.svg"><img src="../assets/tag-web.svg" alt="Web" height="22"></picture></a>&nbsp; **Date:** 2026-10-06 (updated 2026-10-12 and 2026-10-16)
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-web-dark.svg"><img src="../assets/tag-web.svg" alt="Web" height="22"></picture></a>&nbsp; **Date:** 2026-10-06 (updated 2026-10-12, 2026-10-16 and 2026-10-28)
 
 ## What I built or changed
 
@@ -18,6 +18,7 @@
 - Later: the worked examples also show the profit and loss and the balance sheet next to the see-saw, using the same parts as the simulator.
 - Later: labs became part of finishing a module, and the end of each module now leads to its lab and quiz.
 - Later: audited the whole platform before a progress review: every page on desktop and phone, plus an automated accessibility scan. The worst find was progress that disagreed between pages, so I made the dashboard and the Resume button follow the same rule as the course page and added a test for it.
+- Later: replaced the "Mark complete" button with an invisible check. A lesson completes by itself once the learner has really listened to the narrated audio for 30 seconds and answered its questions correctly, and they can move between lessons freely.
 
 ## What I learned
 
@@ -33,6 +34,7 @@
 - Comparing what different pages say about the same thing is a fast way to find that kind of bug. The dashboard counted only the lessons, while the course page and the final exam page also counted the lab and the quiz.
 - An accessibility scanner catches what looks fine to the eye: white text on the bright brand-orange buttons only reaches about 3.5:1 contrast, and normal-size text needs 4.5:1.
 - Next.js skips the jump to a `#section` link when the page shows a loading skeleton first, because the section doesn't exist yet. A tiny client component that scrolls to it once the content arrives fixes it.
+- Counting how long someone really listened is different from reading where the audio is. Adding up the time while it plays, and ignoring jumps, stops "skip to the end" from counting. The server also only lets the stored total grow a little per report, so it decides, not the browser.
 - Reusing a part that already exists is better than building a second one that slowly goes out of step.
 - In a folder shared with other unfinished work, commit only your own changes, and check that what you commit still builds on its own.
 - Formal accreditation (like QQI in Ireland) is a long, expensive process. CPD accreditation and a certificate with a public verification page are the realistic first steps, and the course must never claim exemptions it doesn't have.
