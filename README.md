@@ -30,6 +30,7 @@ Newest first.
 
 <table>
   <tr><th>Date</th><th>Entry</th><th>Area</th></tr>
+  <tr><td>2026-10-28</td><td><a href="python/2026-10-28-keeping-python-projects-healthy.md">Keeping Python projects healthy with small, tested maintenance</a></td><td><a href="python/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-python-dark.svg"><img src="./assets/tag-python.svg" alt="Python" height="24"></picture></a></td></tr>
   <tr><td>2026-10-20</td><td><a href="python/2026-10-20-a-paper-trading-app-with-an-honest-ml-signal.md">A paper trading desktop app with an honestly tested machine-learning signal</a></td><td><a href="python/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-python-dark.svg"><img src="./assets/tag-python.svg" alt="Python" height="24"></picture></a></td></tr>
   <tr><td>2026-10-19</td><td><a href="android/2026-10-19-screen-readers-and-two-languages-in-an-android-app.md">Making an Android app work with a screen reader and in two languages</a></td><td><a href="android/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-android-dark.svg"><img src="./assets/tag-android.svg" alt="Android" height="24"></picture></a></td></tr>
   <tr><td>2026-10-19</td><td><a href="android/2026-10-19-dark-theme-for-an-existing-android-app.md">Adding a dark theme to an existing Android app</a></td><td><a href="android/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-android-dark.svg"><img src="./assets/tag-android.svg" alt="Android" height="24"></picture></a></td></tr>
