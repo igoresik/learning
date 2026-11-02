@@ -7,7 +7,6 @@
 ## About
 
 Hi, I'm Georgy, a junior developer from Portugal, currently an Erasmus+ intern in Cork, Ireland.
-I have CCNA and cybersecurity foundations, and I work with Java, Python, Android, web, and networking/security.
 
 This repo is my learning notebook: short notes and mini-projects that show what I've actually built and learned, as I go.
 It's a record of progress, not a showcase of finished products.
