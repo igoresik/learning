@@ -19,6 +19,8 @@
 - Later: labs became part of finishing a module, and the end of each module now leads to its lab and quiz.
 - Later: audited the whole platform before a progress review: every page on desktop and phone, plus an automated accessibility scan. The worst find was progress that disagreed between pages, so I made the dashboard and the Resume button follow the same rule as the course page and added a test for it.
 - Later: replaced the "Mark complete" button with an invisible check. A lesson completes by itself once the learner has really listened to the narrated audio for 30 seconds and answered its questions correctly, and they can move between lessons freely.
+- Later: exam rules with real consequences: a mock exam that records nothing, the final recorded the moment it starts, waiting periods that grow after flagged attempts, and a certificate with a QR code to a public verification page.
+- Later: lessons that make the learner think: the narration stops after each question so they can try before hearing the answer, and the case-study lessons stay closed until they have done the exercise themselves.
 
 ## What I learned
 
@@ -38,6 +40,7 @@
 - Reusing a part that already exists is better than building a second one that slowly goes out of step.
 - In a folder shared with other unfinished work, commit only your own changes, and check that what you commit still builds on its own.
 - Formal accreditation (like QQI in Ireland) is a long, expensive process. CPD accreditation and a certificate with a public verification page are the realistic first steps, and the course must never claim exemptions it doesn't have.
+- Recording an exam attempt when it starts, not when it is submitted, closes a quiet loophole: closing the tab can no longer dodge a bad result.
 
 ## Languages
 
