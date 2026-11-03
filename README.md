@@ -29,6 +29,7 @@ Newest first.
 
 <table>
   <tr><th>Date</th><th>Entry</th><th>Area</th></tr>
+  <tr><td>2026-11-03</td><td><a href="web/2026-11-03-real-404s-from-pages-that-stream.md">Real 404 status codes from pages that stream</a></td><td><a href="web/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-web-dark.svg"><img src="./assets/tag-web.svg" alt="Web" height="24"></picture></a></td></tr>
   <tr><td>2026-10-28</td><td><a href="web/2026-10-28-gpu-effects-a-film-and-a-guide-for-a-product-site.md">GPU effects, a code-made film and a fact-checked guide for a product site</a></td><td><a href="web/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-web-dark.svg"><img src="./assets/tag-web.svg" alt="Web" height="24"></picture></a></td></tr>
   <tr><td>2026-10-28</td><td><a href="python/2026-10-28-keeping-python-projects-healthy.md">Keeping Python projects healthy with small, tested maintenance</a></td><td><a href="python/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-python-dark.svg"><img src="./assets/tag-python.svg" alt="Python" height="24"></picture></a></td></tr>
   <tr><td>2026-10-20</td><td><a href="python/2026-10-20-a-paper-trading-app-with-an-honest-ml-signal.md">A paper trading desktop app with an honestly tested machine-learning signal</a></td><td><a href="python/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-python-dark.svg"><img src="./assets/tag-python.svg" alt="Python" height="24"></picture></a></td></tr>
