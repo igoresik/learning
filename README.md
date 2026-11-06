@@ -29,6 +29,7 @@ Newest first.
 
 <table>
   <tr><th>Date</th><th>Entry</th><th>Area</th></tr>
+  <tr><td>2026-11-04</td><td><a href="python/2026-11-04-making-llm-output-fit-a-real-format.md">Making an LLM's output fit a real format, and testing it on local models</a></td><td><a href="python/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-python-dark.svg"><img src="./assets/tag-python.svg" alt="Python" height="24"></picture></a></td></tr>
   <tr><td>2026-11-04</td><td><a href="web/2026-11-04-cleaning-up-markup-without-changing-the-look.md">Cleaning up a site's markup without changing how it looks</a></td><td><a href="web/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-web-dark.svg"><img src="./assets/tag-web.svg" alt="Web" height="24"></picture></a></td></tr>
   <tr><td>2026-11-03</td><td><a href="python/2026-11-03-connecting-a-python-tool-to-llm-apis.md">Connecting a Python tool to LLM APIs with the user's own key</a></td><td><a href="python/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-python-dark.svg"><img src="./assets/tag-python.svg" alt="Python" height="24"></picture></a></td></tr>
   <tr><td>2026-11-03</td><td><a href="web/2026-11-03-real-404s-from-pages-that-stream.md">Real 404 status codes from pages that stream</a></td><td><a href="web/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/tag-web-dark.svg"><img src="./assets/tag-web.svg" alt="Web" height="24"></picture></a></td></tr>
