@@ -1,7 +1,7 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg"><img src="./assets/header.svg" alt="Learning notebook: what I build, and what it teaches me" width="100%"></picture>
 
 <a href="https://github.com/igoresik"><img src="https://skillicons.dev/icons?i=github" height="36" alt="GitHub profile"></a>&nbsp;
-<a href="https://www.linkedin.com/in/georgy-esik-6a83a843b/"><img src="https://skillicons.dev/icons?i=linkedin" height="36" alt="LinkedIn"></a>&nbsp;
+<a href="https://www.linkedin.com/in/georgyesik/"><img src="https://skillicons.dev/icons?i=linkedin" height="36" alt="LinkedIn"></a>&nbsp;
 <a href="mailto:georgyesik@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="36" alt="Email"></a>
 
 ## About
