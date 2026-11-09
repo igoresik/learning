@@ -2,7 +2,7 @@
 
 # Built interactive lessons and a fair exam system for an online course
 
-<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-web-dark.svg"><img src="../assets/tag-web.svg" alt="Web" height="22"></picture></a>&nbsp; **Date:** 2026-10-06 (updated 2026-10-12, 2026-10-16 and 2026-10-28)
+<a href="./"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/tag-web-dark.svg"><img src="../assets/tag-web.svg" alt="Web" height="22"></picture></a>&nbsp; **Date:** 2026-10-06 (updated 2026-10-12, 2026-10-16, 2026-10-28 and 2026-11-09)
 
 ## What I built or changed
 
@@ -21,6 +21,7 @@
 - Later: replaced the "Mark complete" button with an invisible check. A lesson completes by itself once the learner has really listened to the narrated audio for 30 seconds and answered its questions correctly, and they can move between lessons freely.
 - Later: exam rules with real consequences: a mock exam that records nothing, the final recorded the moment it starts, waiting periods that grow after flagged attempts, and a certificate with a QR code to a public verification page.
 - Later: lessons that make the learner think: the narration stops after each question so they can try before hearing the answer, and the case-study lessons stay closed until they have done the exercise themselves.
+- Later: the mock exam got its own bank of 40 questions instead of reusing the module quizzes, and each attempt draws 30 of them. That meant a database change to allow the new question type, the loading script, the exam page and its tests.
 
 ## What I learned
 
@@ -41,6 +42,8 @@
 - In a folder shared with other unfinished work, commit only your own changes, and check that what you commit still builds on its own.
 - Formal accreditation (like QQI in Ireland) is a long, expensive process. CPD accreditation and a certificate with a public verification page are the realistic first steps, and the course must never claim exemptions it doesn't have.
 - Recording an exam attempt when it starts, not when it is submitted, closes a quiet loophole: closing the tab can no longer dodge a bad result.
+- New exam questions need checking against every question that already exists. A small script scoring word overlap and shared figures found the near-repeats, and reading the closest pairs by hand settled the rest.
+- When a change needs both new code and new database rows, the order matters: change the database and load the rows first, while the old code ignores them, then release the code. That way learners never meet an empty exam.
 
 ## Languages
 
